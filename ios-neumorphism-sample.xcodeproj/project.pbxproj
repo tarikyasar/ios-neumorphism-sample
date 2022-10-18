@@ -11,6 +11,10 @@
 		71CEC36F28FF080A003DCDE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CEC36E28FF080A003DCDE0 /* ContentView.swift */; };
 		71CEC37128FF080B003DCDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71CEC37028FF080B003DCDE0 /* Assets.xcassets */; };
 		71CEC37428FF080B003DCDE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71CEC37328FF080B003DCDE0 /* Preview Assets.xcassets */; };
+		71CEC37C28FF084A003DCDE0 /* ios-neumorphism in Frameworks */ = {isa = PBXBuildFile; productRef = 71CEC37B28FF084A003DCDE0 /* ios-neumorphism */; };
+		71CEC37E28FF089C003DCDE0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CEC37D28FF089C003DCDE0 /* Color.swift */; };
+		71CEC38128FF16CD003DCDE0 /* DarkNeumorphicViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CEC38028FF16CD003DCDE0 /* DarkNeumorphicViews.swift */; };
+		71CEC38328FF16DA003DCDE0 /* LightNeumorphicViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CEC38228FF16DA003DCDE0 /* LightNeumorphicViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		71CEC36E28FF080A003DCDE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71CEC37028FF080B003DCDE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71CEC37328FF080B003DCDE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71CEC37D28FF089C003DCDE0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		71CEC38028FF16CD003DCDE0 /* DarkNeumorphicViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkNeumorphicViews.swift; sourceTree = "<group>"; };
+		71CEC38228FF16DA003DCDE0 /* LightNeumorphicViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightNeumorphicViews.swift; sourceTree = "<group>"; };
+		71CEC38428FF180F003DCDE0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71CEC37C28FF084A003DCDE0 /* ios-neumorphism in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +60,13 @@
 		71CEC36B28FF080A003DCDE0 /* ios-neumorphism-sample */ = {
 			isa = PBXGroup;
 			children = (
+				71CEC38428FF180F003DCDE0 /* README.md */,
+				71CEC37F28FF16C1003DCDE0 /* Views */,
 				71CEC36C28FF080A003DCDE0 /* ios_neumorphism_sampleApp.swift */,
 				71CEC36E28FF080A003DCDE0 /* ContentView.swift */,
 				71CEC37028FF080B003DCDE0 /* Assets.xcassets */,
 				71CEC37228FF080B003DCDE0 /* Preview Content */,
+				71CEC37D28FF089C003DCDE0 /* Color.swift */,
 			);
 			path = "ios-neumorphism-sample";
 			sourceTree = "<group>";
@@ -65,6 +77,15 @@
 				71CEC37328FF080B003DCDE0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		71CEC37F28FF16C1003DCDE0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71CEC38028FF16CD003DCDE0 /* DarkNeumorphicViews.swift */,
+				71CEC38228FF16DA003DCDE0 /* LightNeumorphicViews.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +104,9 @@
 			dependencies = (
 			);
 			name = "ios-neumorphism-sample";
+			packageProductDependencies = (
+				71CEC37B28FF084A003DCDE0 /* ios-neumorphism */,
+			);
 			productName = "ios-neumorphism-sample";
 			productReference = 71CEC36928FF080A003DCDE0 /* ios-neumorphism-sample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 71CEC36028FF080A003DCDE0;
+			packageReferences = (
+				71CEC37A28FF084A003DCDE0 /* XCRemoteSwiftPackageReference "ios-neumorphism" */,
+			);
 			productRefGroup = 71CEC36A28FF080A003DCDE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +166,9 @@
 			files = (
 				71CEC36F28FF080A003DCDE0 /* ContentView.swift in Sources */,
 				71CEC36D28FF080A003DCDE0 /* ios_neumorphism_sampleApp.swift in Sources */,
+				71CEC38128FF16CD003DCDE0 /* DarkNeumorphicViews.swift in Sources */,
+				71CEC37E28FF089C003DCDE0 /* Color.swift in Sources */,
+				71CEC38328FF16DA003DCDE0 /* LightNeumorphicViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71CEC37A28FF084A003DCDE0 /* XCRemoteSwiftPackageReference "ios-neumorphism" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tarikyasar/ios-neumorphism";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71CEC37B28FF084A003DCDE0 /* ios-neumorphism */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71CEC37A28FF084A003DCDE0 /* XCRemoteSwiftPackageReference "ios-neumorphism" */;
+			productName = "ios-neumorphism";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 71CEC36128FF080A003DCDE0 /* Project object */;
 }

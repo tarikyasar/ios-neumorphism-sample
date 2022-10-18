@@ -6,16 +6,39 @@
 //
 
 import SwiftUI
+import ios_neumorphism
 
 struct ContentView: View {
+    @State var weather = "cloud.drizzle.fill"
+    @State var isOn = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            ZStack {
+                Color.darkEnd
+                
+                DarkNeumorphicViews(
+                    isOn: $isOn,
+                    weather: $weather
+                )
+            }
+            .ignoresSafeArea()
+            
+            
+            ZStack {
+                Color.offWhite
+                
+                LightNeumorphicViews(
+                    isOn: $isOn,
+                    weather: $weather
+                )
+            }
+            .ignoresSafeArea()
+            
         }
-        .padding()
+        
+        .tabViewStyle(.page)
+        .ignoresSafeArea()
     }
 }
 
