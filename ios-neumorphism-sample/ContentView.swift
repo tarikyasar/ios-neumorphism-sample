@@ -15,17 +15,6 @@ struct ContentView: View {
     var body: some View {
         TabView {
             ZStack {
-                Color.darkEnd
-                
-                DarkNeumorphicViews(
-                    isOn: $isOn,
-                    weather: $weather
-                )
-            }
-            .ignoresSafeArea()
-            
-            
-            ZStack {
                 Color.offWhite
                 
                 LightNeumorphicViews(
@@ -35,6 +24,15 @@ struct ContentView: View {
             }
             .ignoresSafeArea()
             
+            ZStack {
+                Color.darkEnd
+                
+                DarkNeumorphicViews(
+                    isOn: $isOn,
+                    weather: $weather
+                )
+            }
+            .ignoresSafeArea()
         }
         
         .tabViewStyle(.page)

@@ -11,6 +11,7 @@ import ios_neumorphism
 struct LightNeumorphicViews: View {
     @Binding var isOn: Bool
     @Binding var weather: String
+    @State var isToggleOn: Bool = false
     
     var body: some View {
         ScrollView {
@@ -108,7 +109,12 @@ struct LightNeumorphicViews: View {
                 .padding(.horizontal, 40)
                 .padding(.bottom, 40)
                 
-                NeumorphicToggleSwitch(isOn: $isOn, isDarkMode: false)
+                NeumorphicToggleSwitch(
+                    isOn: _isToggleOn,
+                    isDarkMode: false,
+                    width: 80,
+                    activatedColor: Color.teal
+                )
                     .frame(width: .zero, alignment: .center)
                     .toggleStyle(SwitchToggleStyle(tint: Color.teal))
              
